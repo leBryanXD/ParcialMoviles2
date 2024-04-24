@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pianoTradicional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/piano_tradicional" />
+    <item
+        android:id="@+id/pianoSelvatico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/piano_selvatico" />
+    <item
+        android:id="@+id/pianoInstrumentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/piano_instrumentos" />
+    <item
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/informacion"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@android:drawable/ic_delete"
+        android:title="@string/cerrar"
+        app:showAsAction="ifRoom" />
+</menu>

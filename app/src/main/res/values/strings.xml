@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PianoGrupo02</string>
+    <string name="informacion">Info</string>
+    <string name="cerrar">cerrar</string>
+    <string name="piano_instrumentos">Piano Instrumentos</string>
+    <string name="piano_selvatico">Piano Selvatico</string>
+    <string name="piano_tradicional">Piano tradicional</string>
+    <string name="aplicacioninfotext1">Esta aplicación fue construida por:</string>
+    <string name="bryan_alberto_v_squez_farf_n">Bryan Alberto Vásquez Farfán</string>
+    <string name="andy_william_guevara_roldan">Andy William Guevara Roldan</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="esta_aplicaci_n_fue_construida_para_el_parcial_del_segundo_periodo">Esta aplicación fue construida para el parcial del segundo periodo.</string>
+</resources>
