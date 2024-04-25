@@ -1,18 +1,20 @@
 package com.example.pianogrupo02;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
 public class PianoSelvatico extends AppCompatActivity {
-
+    private MediaPlayer mediaPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,4 +49,46 @@ public class PianoSelvatico extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void playAnimal(int soundResourceId) {
+
+        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+        mediaPlayer = MediaPlayer.create(PianoSelvatico.this, soundResourceId);
+        try {
+            mediaPlayer.start();
+        } catch (IllegalStateException e) {
+            e.printStackTrace();
+        }
+    }
+    public void serpiente(View v) {
+        playAnimal(R.raw.serpiente);
+    }
+    public void tigre(View v) {
+        playAnimal(R.raw.tigre);
+    }
+    public void mono(View v) {
+        playAnimal(R.raw.mono);
+    }
+    public void mapache(View v) {
+        playAnimal(R.raw.mapache);
+    }
+    public void cocodrilo(View v) {
+        playAnimal(R.raw.cocodrilo);
+    }
+    public void oso(View v) {
+        playAnimal(R.raw.oso);
+    }
+    public void elefante(View v) {
+        playAnimal(R.raw.elefante);
+    }
+
+
+
+
+
+
 }

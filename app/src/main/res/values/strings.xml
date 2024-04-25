@@ -18,4 +18,7 @@
     <string name="sol">SOL</string>
     <string name="la">LA</string>
     <string name="si">SI</string>
+    <string name="piano_selv_tico">Piano Selvático</string>
+    <string name="press">.</string>
+    <string name="toca_un_animal_y_se_reproducir_su_sonido">Toca un animal y se reproducirá su sonido.</string>
 </resources>
