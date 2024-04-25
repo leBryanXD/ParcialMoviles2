@@ -33,7 +33,7 @@ public class Info extends AppCompatActivity {
         } else if (itemId == R.id.cerrar) {
             finish();
         } else if (itemId == R.id.pianoTradicional) {
-            Intent pantalla = new Intent(Info.this,MainActivity.class);
+            Intent pantalla = new Intent(Info.this, MainActivity.class);
             finish();
             startActivity(pantalla);
 

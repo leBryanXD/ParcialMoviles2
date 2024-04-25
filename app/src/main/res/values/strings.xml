@@ -11,4 +11,11 @@
     <string name="todo">TODO</string>
     <string name="todo2">TODO</string>
     <string name="esta_aplicaci_n_fue_construida_para_el_parcial_del_segundo_periodo">Esta aplicación fue construida para el parcial del segundo periodo.</string>
+    <string name="donote">DO</string>
+    <string name="re">RE</string>
+    <string name="mi">MI</string>
+    <string name="fa">FA</string>
+    <string name="sol">SOL</string>
+    <string name="la">LA</string>
+    <string name="si">SI</string>
 </resources>

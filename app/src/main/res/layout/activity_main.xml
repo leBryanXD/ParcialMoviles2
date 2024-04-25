@@ -4,15 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/piano"
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="87dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F9F2E5"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="screen"
+        android:onClick="playDo"
+        android:text="@string/donote"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="85dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="8dp"
+        android:background="#F9F2E5"
+        android:backgroundTint="#F8F1E4"
+        android:onClick="playRe"
+        android:text="@string/re"
+        android:textColor="#151515"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="82dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="16dp"
+        android:background="#F9F2E5"
+        android:backgroundTint="#F8F1E4"
+        android:backgroundTintMode="src_in"
+        android:onClick="playMi"
+        android:text="@string/mi"
+        android:textColor="#0E0E0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="82dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F9F2E5"
+        android:onClick="playFa"
+        android:text="@string/fa"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="84dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="207dp"
+        android:background="#F9F2E5"
+        android:onClick="playSol"
+        android:text="@string/sol"
+        android:textColor="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="82dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="5dp"
+        android:background="#F9F2E5"
+        android:onClick="playLa"
+        android:text="@string/la"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="91dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F9F2E5"
+        android:onClick="playSi"
+        android:text="@string/si"
+        android:textColor="#020202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
